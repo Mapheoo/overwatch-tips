@@ -36,9 +36,11 @@
             <span class="playing_sentence"><%= playing_sentence(tip.category, tip.gaming_object) %></span><br />
           <% end %>
         <% end %>
+
         <span class="tip_description"><%= raw description_with_links(tip.description) %></span><br />
+        
         <div class="tip_footer">
-          <span class="time_ago pull-right"><%= time_ago_in_words(tip.created_at)%> ago</span>
+          <span class="time_ago"><%= time_ago_in_words(tip.created_at)%> ago</span>
         </div>
       </div>
     </div>
